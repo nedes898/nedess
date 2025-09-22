@@ -1,0 +1,143 @@
+:root{
+  --max-width: 1100px;
+  --accent: #1167b1;
+  --muted: #666;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --radius: 12px;
+  --gap: 1.25rem;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color-scheme: light;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#0b1220;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:1.25rem;
+}
+
+/* Header */
+.site-header{
+  background:linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.6));
+  position:sticky;
+  top:0;
+  backdrop-filter: blur(6px);
+  border-bottom:1px solid rgba(10,12,18,0.05);
+  z-index:50;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--gap);
+}
+.brand{
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  font-size:1.125rem;
+}
+.nav a{
+  margin-left:1rem;
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:600;
+  font-size:0.95rem;
+}
+
+/* Hero */
+.hero{
+  padding:3.5rem 0;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1fr 320px;
+  gap:var(--gap);
+  align-items:center;
+}
+.hero-text h1{
+  font-size:clamp(1.6rem, 3.2vw, 2.25rem);
+  margin:0 0 0.6rem 0;
+}
+.hero-text p{margin:0 0 1rem 0; color:var(--muted)}
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:#fff;
+  padding:0.7rem 1rem;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:700;
+  border:0;
+  cursor:pointer;
+}
+.hero-card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:1rem;
+  box-shadow:0 6px 20px rgba(16,24,40,0.06);
+}
+.quick-features{list-style:none;padding:0;margin:0}
+.quick-features li{padding:0.6rem 0;border-bottom:1px solid #f1f5f9}
+
+/* Sections */
+.section{padding:2rem 0}
+.section.alt{background:transparent}
+h2{margin:0 0 1rem 0}
+
+/* Services grid */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:1rem;
+}
+.service{
+  background:var(--card);
+  padding:1rem;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(16,24,40,0.04);
+}
+
+/* Contact form */
+.contact-form{
+  display:grid;
+  gap:0.75rem;
+  max-width:720px;
+}
+.contact-form label{display:block;font-size:0.9rem;color:var(--muted)}
+.contact-form input, .contact-form textarea{
+  width:100%;
+  padding:0.6rem 0.75rem;
+  border-radius:8px;
+  border:1px solid #e6eef6;
+  background:#fff;
+  font-size:0.95rem;
+}
+
+/* Footer */
+.site-footer{
+  padding:1.25rem 0;
+  border-top:1px solid rgba(10,12,18,0.04);
+  margin-top:2rem;
+}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.site-footer small{color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .nav{display:none}
+  .header-inner{justify-content:space-between}
+}
