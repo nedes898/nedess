@@ -1,9 +1,10 @@
 # NedesEstimating Website
 
-Simple static website for **NedesEstimating** — a construction estimating services provider.
+Simple static website for **[NedesEstimating](https://nedesestimating.com/)** — a construction estimating services provider.
 
 ## About
-This repository contains a minimal, responsive static site (HTML + CSS) for showcasing **construction estimating services**. The site is optimized for basic SEO and quick deployment (GitHub Pages or any static host).
+This repository contains a minimal, responsive static site (HTML + CSS) for showcasing **construction estimating services**.  
+👉 Live site: [https://nedesestimating.com/](https://nedesestimating.com/)
 
 ## Files
 - `index.html` — Main landing page (SEO meta tags included).
@@ -21,6 +22,8 @@ Other related phrases included: estimating, construction cost estimation, bid es
 4. (Optional) Enable GitHub Pages:
    - Go to **Settings → Pages** and select the `main` (or `master`) branch and `/ (root)` folder.
    - Save — your site will be published at `https://<your-username>.github.io/<repo-name>/`.
+
+📌 Official site: [https://nedesestimating.com/](https://nedesestimating.com/)
 
 ## Customization tips
 - Replace the logo text in `index.html` with your logo image if available.
